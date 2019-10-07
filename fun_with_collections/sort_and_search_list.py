@@ -31,19 +31,17 @@ def get_input():
 
 
 def sort_list(generic_list):
-    # generic_list.sort()  # I'm doing a return statement because it makes it nice and clean to print for the user
-    # return generic_list
-    pass
+    generic_list.sort()  # I'm doing a return statement because it makes it nice and clean to print for the user
+    return generic_list
 
 
 def search_list(generic_list):
-    # try:
-    #     index_input = int(input("Please enter a number you wish to search in the list: "))
-    #     index = generic_list.index(index_input)
-    #     return 'The index of ' + str(index_input) + ": " + str(index)
-    # except ValueError:
-    #     return "-1"
-    pass
+    try:
+        index_input = int(input("Please enter a number you wish to search in the list: "))
+        index = generic_list.index(index_input)
+        return 'The index of ' + str(index_input) + ": " + str(index)
+    except ValueError:
+        return "-1"
 
 
 if __name__ == '__main__':
