@@ -17,6 +17,8 @@ def make_list():
     try:
         for value in range(0, 3):
             num = int(get_input())
+            if 50 < num < 0:
+                raise ValueError
             input_list_of_three.append(num)
         return input_list_of_three
     except ValueError:
