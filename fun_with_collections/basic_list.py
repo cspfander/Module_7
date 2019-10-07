@@ -9,6 +9,10 @@ to return just one input.
 
 
 def make_list():
+    """
+    :return: make_list() will call the get_input() function to ask the user for input and then store it inside of
+    a list using a for loop, then return that list
+    """
     input_list_of_three = []
     try:
         for value in range(0, 3):
@@ -20,8 +24,11 @@ def make_list():
 
 
 def get_input():
+    """
+    :return: get_input() will return a string that collects information from the user that is reusable
+    """
     return input("Please enter a number: ")
 
 
 if __name__ == '__main__':
-    print()
+    print(make_list())
